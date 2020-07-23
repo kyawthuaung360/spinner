@@ -63,13 +63,14 @@ class _MyHomePageState extends State<MyHomePage>{
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Stack(
               children: <Widget>[
                 SpinningWheel(
-                  Image.asset('assets/spin.png'),
-                  width: 310,
-                  height: 310,
+                  Image.asset('assets/spin.png',fit: BoxFit.cover,),
+                  width: 500,
+                  height: 500,
                   spinResistance: 0.2,
                   initialSpinAngle: _generateRandomAngle(),
                   dividers: 12,
